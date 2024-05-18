@@ -5,7 +5,7 @@ import cn.hutool.core.util.StrUtil;
 import com.example.common.Result;
 import com.example.common.enums.ResultCodeEnum;
 import com.example.common.enums.RoleEnum;
-import com.example.entity.Account;
+import com.example.entity.po.Account;
 import com.example.service.impl.AdminService;
 import org.springframework.web.bind.annotation.*;
 

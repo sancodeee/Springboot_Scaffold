@@ -1,7 +1,7 @@
 package com.example.controller;
 
 import com.example.common.Result;
-import com.example.entity.Notice;
+import com.example.entity.po.Notice;
 import com.example.service.impl.NoticeService;
 import com.github.pagehelper.PageInfo;
 import org.springframework.web.bind.annotation.*;

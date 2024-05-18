@@ -8,7 +8,7 @@ import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.example.common.Constants;
 import com.example.common.enums.ResultCodeEnum;
 import com.example.common.enums.RoleEnum;
-import com.example.entity.Account;
+import com.example.entity.po.Account;
 import com.example.exception.CustomException;
 import com.example.service.impl.AdminService;
 import lombok.extern.slf4j.Slf4j;
