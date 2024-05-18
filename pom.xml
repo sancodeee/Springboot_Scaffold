@@ -89,6 +89,7 @@
         <!-- 资源过滤 -->
         <resources>
             <resource>
+                <!-- 启用资源过滤 资源文件使用占位符，构建过程中被实际的值替换掉-->
                 <directory>src/main/java</directory>
                 <includes>
                     <include>**/*.properties</include>
@@ -98,6 +99,7 @@
                 <filtering>true</filtering>
             </resource>
             <resource>
+                <!-- 不启用资源过滤，静态文件被原样打包 -->
                 <directory>src/main/resources</directory>
                 <filtering>false</filtering>
             </resource>
