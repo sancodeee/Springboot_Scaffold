@@ -48,8 +48,13 @@ public class JwtInterceptor implements HandlerInterceptor {
         try {
             // 解析token获取存储的数据
             String userRole = JWT.decode(token).getAudience().get(0);
-            String userId = userRole.split("-")[0];
-            String role = userRole.split("-")[1];
+            String[] userRoleArr = userRole.split("-");
+            String userId = null;
+            String role = null;
+            if (userRoleArr.length >= 2) {
+                userId = userRoleArr[0];
+                role = userRoleArr[1];
+            }
             // 根据userId查询数据库
             if (RoleEnum.ADMIN.name().equals(role)) {
                 account = adminService.selectById(Integer.valueOf(userId));
